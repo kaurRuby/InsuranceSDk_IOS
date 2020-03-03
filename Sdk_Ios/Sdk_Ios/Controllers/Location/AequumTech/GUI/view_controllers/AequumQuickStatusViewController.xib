@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AequumQuickStatusViewController" customModule="AequumPOCFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="aeStatusView" destination="bRV-ne-Coc" id="tZs-f7-oSK"/>
+                <outlet property="pagingIndicator" destination="II1-jY-P7b" id="rrc-aS-nZh"/>
+                <outlet property="scrollView" destination="2z0-cA-qfc" id="G6E-T8-qf5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRV-ne-Coc">
+                    <rect key="frame" x="10" y="144" width="394" height="698"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ3-WQ-i1j">
+                            <rect key="frame" x="266" y="660" width="120" height="30"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="m5D-i9-W31"/>
+                            </constraints>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeAqeuumStatusScreen:" destination="-1" eventType="touchUpInside" id="YJC-rl-vUz"/>
+                            </connections>
+                        </button>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z0-cA-qfc">
+                            <rect key="frame" x="8" y="59" width="378" height="573"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="fuB-0E-nVM"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="KBp-vg-60n"/>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="II1-jY-P7b">
+                            <rect key="frame" x="153.5" y="631" width="87" height="37"/>
+                            <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pageControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aequum Status Screens Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-HH-rWz">
+                            <rect key="frame" x="51.5" y="24" width="291" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AJ3-WQ-i1j" secondAttribute="bottom" constant="8" id="3zw-01-sVt"/>
+                        <constraint firstAttribute="trailing" secondItem="AJ3-WQ-i1j" secondAttribute="trailing" constant="8" id="99m-PS-7Xu"/>
+                        <constraint firstItem="2z0-cA-qfc" firstAttribute="top" secondItem="CjM-HH-rWz" secondAttribute="bottom" constant="8" id="G52-SQ-IJW"/>
+                        <constraint firstItem="CjM-HH-rWz" firstAttribute="centerX" secondItem="bRV-ne-Coc" secondAttribute="centerX" id="Mvt-pY-DvX"/>
+                        <constraint firstAttribute="bottom" secondItem="2z0-cA-qfc" secondAttribute="bottom" constant="66" id="NPR-VC-T7f"/>
+                        <constraint firstItem="CjM-HH-rWz" firstAttribute="top" secondItem="bRV-ne-Coc" secondAttribute="top" constant="24" id="SDG-na-RQA"/>
+                        <constraint firstAttribute="trailing" secondItem="2z0-cA-qfc" secondAttribute="trailing" constant="8" id="eR3-v4-g0o"/>
+                        <constraint firstAttribute="bottom" secondItem="II1-jY-P7b" secondAttribute="bottom" constant="30" id="tXb-rz-R1f"/>
+                        <constraint firstItem="II1-jY-P7b" firstAttribute="centerX" secondItem="bRV-ne-Coc" secondAttribute="centerX" id="uJX-5w-l0S"/>
+                        <constraint firstItem="2z0-cA-qfc" firstAttribute="leading" secondItem="bRV-ne-Coc" secondAttribute="leading" constant="8" id="zcK-D0-pM4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bRV-ne-Coc" secondAttribute="trailing" constant="10" id="O3v-YU-VRO"/>
+                <constraint firstItem="bRV-ne-Coc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Ucl-85-EAg"/>
+                <constraint firstItem="bRV-ne-Coc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="W2v-db-9Yg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bRV-ne-Coc" secondAttribute="bottom" constant="20" id="lbx-mN-08U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </view>
+    </objects>
+</document>

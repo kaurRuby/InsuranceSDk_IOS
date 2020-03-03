@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26111DC723B56A210001C8C0 /* Telematics_dashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26111DC623B56A210001C8C0 /* Telematics_dashboardVC.swift */; };
+		261C31B823BBD4E400DF07EC /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622F63323B16D5600736A1B /* Charts.framework */; platformFilter = ios; };
+		261C31B923BBD4E400DF07EC /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2622F63323B16D5600736A1B /* Charts.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		261C31BB23BBD4E800DF07EC /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26245AF323AA7FAE00471054 /* ObjectMapper.framework */; platformFilter = ios; };
+		261C31BC23BBD4E800DF07EC /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26245AF323AA7FAE00471054 /* ObjectMapper.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		261CC9D323CD299F0066A9E5 /* TelematicsDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC9D223CD299F0066A9E5 /* TelematicsDashboardVC.swift */; };
+		2622F62F23B1698700736A1B /* Telematics_rateHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622F62E23B1698700736A1B /* Telematics_rateHistoryVC.swift */; };
+		2622F63A23B16E8500736A1B /* RateHistory_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622F63923B16E8500736A1B /* RateHistory_VM.swift */; };
+		26247F7023B155FB00E8B0F6 /* Telematics_ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26247F6E23B155FB00E8B0F6 /* Telematics_ScrollVC.swift */; };
+		26247F7823B1615F00E8B0F6 /* Telematics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26247F7723B1615F00E8B0F6 /* Telematics.storyboard */; };
+		262489D123ABD6510010804A /* TelematicVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262489D023ABD6510010804A /* TelematicVModel.swift */; };
+		2624F2E223BAB01E00577AAD /* Telematics_dashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F2E123BAB01E00577AAD /* Telematics_dashboardVM.swift */; };
+		2627E64223A45B4B001F3AEA /* Bluetooth_mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E64023A45B4B001F3AEA /* Bluetooth_mainVC.swift */; };
+		2627E64323A45B4B001F3AEA /* Bluetooth_mainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E64123A45B4B001F3AEA /* Bluetooth_mainVC.xib */; };
+		2627E64A23A45EC4001F3AEA /* Bluetooth_devicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E64823A45EC4001F3AEA /* Bluetooth_devicesVC.swift */; };
+		2627E64B23A45EC4001F3AEA /* Bluetooth_devicesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E64923A45EC4001F3AEA /* Bluetooth_devicesVC.xib */; };
+		2627E67C23A46827001F3AEA /* GPSAccelerationCalculationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65023A46827001F3AEA /* GPSAccelerationCalculationOperation.swift */; };
+		2627E67D23A46827001F3AEA /* GPSLocationServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65123A46827001F3AEA /* GPSLocationServiceOperation.swift */; };
+		2627E67E23A46827001F3AEA /* AequumCommOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65323A46827001F3AEA /* AequumCommOperation.swift */; };
+		2627E67F23A46827001F3AEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65523A46827001F3AEA /* Constants.swift */; };
+		2627E68023A46827001F3AEA /* Screen Shot 2019-11-24 at 5.19.20 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2627E65623A46827001F3AEA /* Screen Shot 2019-11-24 at 5.19.20 PM.png */; };
+		2627E68123A46827001F3AEA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65723A46827001F3AEA /* Utils.swift */; };
+		2627E68223A46827001F3AEA /* PredictionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65823A46827001F3AEA /* PredictionBuilder.swift */; };
+		2627E68323A46827001F3AEA /* AequumMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65A23A46827001F3AEA /* AequumMaster.swift */; };
+		2627E68423A46827001F3AEA /* AequumDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E65B23A46827001F3AEA /* AequumDelegate.swift */; };
+		2627E68523A46827001F3AEA /* AequumQuickStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E65E23A46827001F3AEA /* AequumQuickStatusViewController.xib */; };
+		2627E68623A46827001F3AEA /* Slide6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66023A46827001F3AEA /* Slide6ViewController.swift */; };
+		2627E68723A46827001F3AEA /* Slide5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66123A46827001F3AEA /* Slide5ViewController.swift */; };
+		2627E68823A46827001F3AEA /* LocationServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E66423A46827001F3AEA /* LocationServiceTableViewCell.xib */; };
+		2627E68923A46827001F3AEA /* LocationServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66523A46827001F3AEA /* LocationServiceTableViewCell.swift */; };
+		2627E68A23A46827001F3AEA /* AccelerationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66623A46827001F3AEA /* AccelerationTableViewCell.swift */; };
+		2627E68B23A46827001F3AEA /* AccelerationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E66723A46827001F3AEA /* AccelerationTableViewCell.xib */; };
+		2627E68C23A46827001F3AEA /* Slide0Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66823A46827001F3AEA /* Slide0Protocol.swift */; };
+		2627E68D23A46827001F3AEA /* Slide4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66923A46827001F3AEA /* Slide4ViewController.swift */; };
+		2627E68E23A46827001F3AEA /* Slide2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66A23A46827001F3AEA /* Slide2ViewController.swift */; };
+		2627E68F23A46827001F3AEA /* Slide3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66B23A46827001F3AEA /* Slide3ViewController.swift */; };
+		2627E69023A46827001F3AEA /* Slide0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66C23A46827001F3AEA /* Slide0ViewController.swift */; };
+		2627E69123A46827001F3AEA /* Slide1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E66D23A46827001F3AEA /* Slide1ViewController.swift */; };
+		2627E69223A46827001F3AEA /* Slide3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E66E23A46827001F3AEA /* Slide3ViewController.xib */; };
+		2627E69323A46827001F3AEA /* Slide6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E66F23A46827001F3AEA /* Slide6ViewController.xib */; };
+		2627E69423A46827001F3AEA /* Slide2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E67023A46827001F3AEA /* Slide2ViewController.xib */; };
+		2627E69523A46827001F3AEA /* Slide1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E67123A46827001F3AEA /* Slide1ViewController.xib */; };
+		2627E69623A46827001F3AEA /* Slide4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E67223A46827001F3AEA /* Slide4ViewController.xib */; };
+		2627E69723A46827001F3AEA /* Slide0ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E67323A46827001F3AEA /* Slide0ViewController.xib */; };
+		2627E69823A46827001F3AEA /* Slide5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627E67423A46827001F3AEA /* Slide5ViewController.xib */; };
+		2627E69923A46827001F3AEA /* AequumQuickStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E67523A46827001F3AEA /* AequumQuickStatusViewController.swift */; };
+		2627E69A23A46827001F3AEA /* AequumTech.h in Headers */ = {isa = PBXBuildFile; fileRef = 2627E67623A46827001F3AEA /* AequumTech.h */; };
+		2627E69B23A46827001F3AEA /* AEPopupNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E67823A46827001F3AEA /* AEPopupNotif.swift */; };
+		2627E69D23A46827001F3AEA /* AEMotionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E67B23A46827001F3AEA /* AEMotionEntity.swift */; };
+		2627E69F23A4685E001F3AEA /* GPSLocationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627E69E23A4685D001F3AEA /* GPSLocationServiceProvider.swift */; };
+		2627FE8B23A812F400160172 /* VehicleSelection_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627FE8923A812F400160172 /* VehicleSelection_VC.swift */; };
+		2627FE8C23A812F400160172 /* VehicleSelection_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2627FE8A23A812F400160172 /* VehicleSelection_VC.xib */; };
+		2628959423AAB43D00038EAE /* VehicleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2628959223AAB43D00038EAE /* VehicleTableCell.swift */; };
+		2628959523AAB43D00038EAE /* VehicleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2628959323AAB43D00038EAE /* VehicleTableCell.xib */; };
+		262AB18723AC4B2D004359AB /* Telematics_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AB18523AC4B2D004359AB /* Telematics_VC.swift */; };
+		262AB18823AC4B2D004359AB /* Telematics_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262AB18623AC4B2D004359AB /* Telematics_VC.xib */; };
+		262ACCFB23A1AE0700E370EF /* Sdk_Ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 262ACCF923A1AE0700E370EF /* Sdk_Ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		262F086C23A84E70009630DB /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F086B23A84E70009630DB /* UserInfo.swift */; };
+		262F086F23A84ED8009630DB /* PolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F086E23A84ED8009630DB /* PolicyModel.swift */; };
+		262F087123A84F05009630DB /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F087023A84F05009630DB /* VehicleModel.swift */; };
+		262F087323A84FE0009630DB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F087223A84FE0009630DB /* Helper.swift */; };
+		262F4E2423A8279200057671 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F4E2223A8279200057671 /* TableCell.swift */; };
+		262F4E2523A8279300057671 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262F4E2323A8279200057671 /* TableCell.xib */; };
+		2633D23A23C68F8500A00B9B /* Telematics_driverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633D23923C68F8500A00B9B /* Telematics_driverVC.swift */; };
+		2643FA4A23A936D3007D2CAE /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2643FA4923A936D3007D2CAE /* WebServices.swift */; };
+		264451C423A98AE0001E81CF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264451C323A98AE0001E81CF /* Media.xcassets */; };
+		264CB11623A3F0CA0032F7A2 /* ScanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CB11423A3F0CA0032F7A2 /* ScanTableCell.swift */; };
+		264CB11723A3F0CA0032F7A2 /* ScanTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264CB11523A3F0CA0032F7A2 /* ScanTableCell.xib */; };
+		264CB15F23A3F5DD0032F7A2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264CB15E23A3F5DD0032F7A2 /* Service.swift */; };
+		265AF50123A973E10066EE1D /* PolicyVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AF50023A973E10066EE1D /* PolicyVModel.swift */; };
+		265AF50323A9773D0066EE1D /* BaseVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265AF50223A9773D0066EE1D /* BaseVModel.swift */; };
+		26994D5A23A97DDE00A1157F /* ConstantValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26994D5923A97DDE00A1157F /* ConstantValues.swift */; };
+		269DAE5F23D27704005D9EAD /* Telematics_CurrentRateVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DAE5E23D27704005D9EAD /* Telematics_CurrentRateVM.swift */; };
+		269DAE6123D27889005D9EAD /* Telematics_CurrentRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DAE6023D27889005D9EAD /* Telematics_CurrentRateModel.swift */; };
+		26B4323823BBBD9600FAE2E0 /* Telematics_DashbordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4323723BBBD9600FAE2E0 /* Telematics_DashbordModel.swift */; };
+		26D7983323B187C100293762 /* TransactionModelArr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7983223B187C100293762 /* TransactionModelArr.swift */; };
+		26D7983623B189AB00293762 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7983423B189AB00293762 /* TransactionCell.swift */; };
+		26D7983723B189AB00293762 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D7983523B189AB00293762 /* TransactionCell.xib */; };
+		26F2E98B23B183CF0069A39B /* Telematics_TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2E98A23B183CF0069A39B /* Telematics_TransactionsVC.swift */; };
+		26F2E98D23B184E70069A39B /* TransactionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2E98C23B184E70069A39B /* TransactionsVM.swift */; };
+		26F2E98F23B186350069A39B /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F2E98E23B186350069A39B /* TransactionModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		261C31BA23BBD4E400DF07EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				261C31BC23BBD4E800DF07EC /* ObjectMapper.framework in Embed Frameworks */,
+				261C31B923BBD4E400DF07EC /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26111DC623B56A210001C8C0 /* Telematics_dashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_dashboardVC.swift; sourceTree = "<group>"; };
+		261CC9D223CD299F0066A9E5 /* TelematicsDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelematicsDashboardVC.swift; sourceTree = "<group>"; };
+		2622F62E23B1698700736A1B /* Telematics_rateHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_rateHistoryVC.swift; sourceTree = "<group>"; };
+		2622F63323B16D5600736A1B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		2622F63923B16E8500736A1B /* RateHistory_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistory_VM.swift; sourceTree = "<group>"; };
+		26245AF323AA7FAE00471054 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		26247F6E23B155FB00E8B0F6 /* Telematics_ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_ScrollVC.swift; sourceTree = "<group>"; };
+		26247F7723B1615F00E8B0F6 /* Telematics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Telematics.storyboard; sourceTree = "<group>"; };
+		262489D023ABD6510010804A /* TelematicVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelematicVModel.swift; sourceTree = "<group>"; };
+		2624F2E123BAB01E00577AAD /* Telematics_dashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_dashboardVM.swift; sourceTree = "<group>"; };
+		2627E64023A45B4B001F3AEA /* Bluetooth_mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth_mainVC.swift; sourceTree = "<group>"; };
+		2627E64123A45B4B001F3AEA /* Bluetooth_mainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bluetooth_mainVC.xib; sourceTree = "<group>"; };
+		2627E64823A45EC4001F3AEA /* Bluetooth_devicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth_devicesVC.swift; sourceTree = "<group>"; };
+		2627E64923A45EC4001F3AEA /* Bluetooth_devicesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bluetooth_devicesVC.xib; sourceTree = "<group>"; };
+		2627E65023A46827001F3AEA /* GPSAccelerationCalculationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSAccelerationCalculationOperation.swift; sourceTree = "<group>"; };
+		2627E65123A46827001F3AEA /* GPSLocationServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocationServiceOperation.swift; sourceTree = "<group>"; };
+		2627E65323A46827001F3AEA /* AequumCommOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AequumCommOperation.swift; sourceTree = "<group>"; };
+		2627E65523A46827001F3AEA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2627E65623A46827001F3AEA /* Screen Shot 2019-11-24 at 5.19.20 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-11-24 at 5.19.20 PM.png"; sourceTree = "<group>"; };
+		2627E65723A46827001F3AEA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2627E65823A46827001F3AEA /* PredictionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionBuilder.swift; sourceTree = "<group>"; };
+		2627E65A23A46827001F3AEA /* AequumMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AequumMaster.swift; sourceTree = "<group>"; };
+		2627E65B23A46827001F3AEA /* AequumDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AequumDelegate.swift; sourceTree = "<group>"; };
+		2627E65E23A46827001F3AEA /* AequumQuickStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AequumQuickStatusViewController.xib; sourceTree = "<group>"; };
+		2627E66023A46827001F3AEA /* Slide6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide6ViewController.swift; sourceTree = "<group>"; };
+		2627E66123A46827001F3AEA /* Slide5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide5ViewController.swift; sourceTree = "<group>"; };
+		2627E66423A46827001F3AEA /* LocationServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationServiceTableViewCell.xib; sourceTree = "<group>"; };
+		2627E66523A46827001F3AEA /* LocationServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceTableViewCell.swift; sourceTree = "<group>"; };
+		2627E66623A46827001F3AEA /* AccelerationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerationTableViewCell.swift; sourceTree = "<group>"; };
+		2627E66723A46827001F3AEA /* AccelerationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccelerationTableViewCell.xib; sourceTree = "<group>"; };
+		2627E66823A46827001F3AEA /* Slide0Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide0Protocol.swift; sourceTree = "<group>"; };
+		2627E66923A46827001F3AEA /* Slide4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide4ViewController.swift; sourceTree = "<group>"; };
+		2627E66A23A46827001F3AEA /* Slide2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide2ViewController.swift; sourceTree = "<group>"; };
+		2627E66B23A46827001F3AEA /* Slide3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide3ViewController.swift; sourceTree = "<group>"; };
+		2627E66C23A46827001F3AEA /* Slide0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide0ViewController.swift; sourceTree = "<group>"; };
+		2627E66D23A46827001F3AEA /* Slide1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide1ViewController.swift; sourceTree = "<group>"; };
+		2627E66E23A46827001F3AEA /* Slide3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide3ViewController.xib; sourceTree = "<group>"; };
+		2627E66F23A46827001F3AEA /* Slide6ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide6ViewController.xib; sourceTree = "<group>"; };
+		2627E67023A46827001F3AEA /* Slide2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide2ViewController.xib; sourceTree = "<group>"; };
+		2627E67123A46827001F3AEA /* Slide1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide1ViewController.xib; sourceTree = "<group>"; };
+		2627E67223A46827001F3AEA /* Slide4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide4ViewController.xib; sourceTree = "<group>"; };
+		2627E67323A46827001F3AEA /* Slide0ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide0ViewController.xib; sourceTree = "<group>"; };
+		2627E67423A46827001F3AEA /* Slide5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide5ViewController.xib; sourceTree = "<group>"; };
+		2627E67523A46827001F3AEA /* AequumQuickStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AequumQuickStatusViewController.swift; sourceTree = "<group>"; };
+		2627E67623A46827001F3AEA /* AequumTech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AequumTech.h; sourceTree = "<group>"; };
+		2627E67823A46827001F3AEA /* AEPopupNotif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPopupNotif.swift; sourceTree = "<group>"; };
+		2627E67B23A46827001F3AEA /* AEMotionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEMotionEntity.swift; sourceTree = "<group>"; };
+		2627E69E23A4685D001F3AEA /* GPSLocationServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSLocationServiceProvider.swift; sourceTree = "<group>"; };
+		2627FE8923A812F400160172 /* VehicleSelection_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSelection_VC.swift; sourceTree = "<group>"; };
+		2627FE8A23A812F400160172 /* VehicleSelection_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleSelection_VC.xib; sourceTree = "<group>"; };
+		2628959223AAB43D00038EAE /* VehicleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableCell.swift; sourceTree = "<group>"; };
+		2628959323AAB43D00038EAE /* VehicleTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableCell.xib; sourceTree = "<group>"; };
+		262AB18523AC4B2D004359AB /* Telematics_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_VC.swift; sourceTree = "<group>"; };
+		262AB18623AC4B2D004359AB /* Telematics_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Telematics_VC.xib; sourceTree = "<group>"; };
+		262ACCF623A1AE0700E370EF /* Sdk_Ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sdk_Ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		262ACCF923A1AE0700E370EF /* Sdk_Ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sdk_Ios.h; sourceTree = "<group>"; };
+		262ACCFA23A1AE0700E370EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		262F086B23A84E70009630DB /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		262F086E23A84ED8009630DB /* PolicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyModel.swift; sourceTree = "<group>"; };
+		262F087023A84F05009630DB /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
+		262F087223A84FE0009630DB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		262F4E2223A8279200057671 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		262F4E2323A8279200057671 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		2633D23923C68F8500A00B9B /* Telematics_driverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_driverVC.swift; sourceTree = "<group>"; };
+		2643FA4923A936D3007D2CAE /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		264451C323A98AE0001E81CF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		264CB11423A3F0CA0032F7A2 /* ScanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableCell.swift; sourceTree = "<group>"; };
+		264CB11523A3F0CA0032F7A2 /* ScanTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanTableCell.xib; sourceTree = "<group>"; };
+		264CB15E23A3F5DD0032F7A2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		265AF50023A973E10066EE1D /* PolicyVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyVModel.swift; sourceTree = "<group>"; };
+		265AF50223A9773D0066EE1D /* BaseVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVModel.swift; sourceTree = "<group>"; };
+		26994D5923A97DDE00A1157F /* ConstantValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantValues.swift; sourceTree = "<group>"; };
+		269DAE5E23D27704005D9EAD /* Telematics_CurrentRateVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_CurrentRateVM.swift; sourceTree = "<group>"; };
+		269DAE6023D27889005D9EAD /* Telematics_CurrentRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_CurrentRateModel.swift; sourceTree = "<group>"; };
+		26B4323723BBBD9600FAE2E0 /* Telematics_DashbordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_DashbordModel.swift; sourceTree = "<group>"; };
+		26D7983223B187C100293762 /* TransactionModelArr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModelArr.swift; sourceTree = "<group>"; };
+		26D7983423B189AB00293762 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		26D7983523B189AB00293762 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		26F2E98A23B183CF0069A39B /* Telematics_TransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telematics_TransactionsVC.swift; sourceTree = "<group>"; };
+		26F2E98C23B184E70069A39B /* TransactionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVM.swift; sourceTree = "<group>"; };
+		26F2E98E23B186350069A39B /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		262ACCF323A1AE0700E370EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261C31BB23BBD4E800DF07EC /* ObjectMapper.framework in Frameworks */,
+				261C31B823BBD4E400DF07EC /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26247F6D23B155BD00E8B0F6 /* TelematicsScroll */ = {
+			isa = PBXGroup;
+			children = (
+				26247F6E23B155FB00E8B0F6 /* Telematics_ScrollVC.swift */,
+				2622F62E23B1698700736A1B /* Telematics_rateHistoryVC.swift */,
+				26F2E98A23B183CF0069A39B /* Telematics_TransactionsVC.swift */,
+				26D7983423B189AB00293762 /* TransactionCell.swift */,
+				26D7983523B189AB00293762 /* TransactionCell.xib */,
+				26111DC623B56A210001C8C0 /* Telematics_dashboardVC.swift */,
+				2633D23923C68F8500A00B9B /* Telematics_driverVC.swift */,
+				261CC9D223CD299F0066A9E5 /* TelematicsDashboardVC.swift */,
+			);
+			path = TelematicsScroll;
+			sourceTree = "<group>";
+		};
+		26247F7623B1614C00E8B0F6 /* Telematics */ = {
+			isa = PBXGroup;
+			children = (
+				26247F7723B1615F00E8B0F6 /* Telematics.storyboard */,
+			);
+			path = Telematics;
+			sourceTree = "<group>";
+		};
+		2627E64D23A46811001F3AEA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2627E64E23A46827001F3AEA /* AequumTech */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		2627E64E23A46827001F3AEA /* AequumTech */ = {
+			isa = PBXGroup;
+			children = (
+				2627E64F23A46827001F3AEA /* gps */,
+				2627E65223A46827001F3AEA /* comm */,
+				2627E65423A46827001F3AEA /* utilities */,
+				2627E65923A46827001F3AEA /* master */,
+				2627E65C23A46827001F3AEA /* GUI */,
+				2627E67623A46827001F3AEA /* AequumTech.h */,
+				2627E67723A46827001F3AEA /* notifications */,
+				2627E67A23A46827001F3AEA /* entities */,
+			);
+			path = AequumTech;
+			sourceTree = "<group>";
+		};
+		2627E64F23A46827001F3AEA /* gps */ = {
+			isa = PBXGroup;
+			children = (
+				2627E69E23A4685D001F3AEA /* GPSLocationServiceProvider.swift */,
+				2627E65023A46827001F3AEA /* GPSAccelerationCalculationOperation.swift */,
+				2627E65123A46827001F3AEA /* GPSLocationServiceOperation.swift */,
+			);
+			path = gps;
+			sourceTree = "<group>";
+		};
+		2627E65223A46827001F3AEA /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65323A46827001F3AEA /* AequumCommOperation.swift */,
+			);
+			path = comm;
+			sourceTree = "<group>";
+		};
+		2627E65423A46827001F3AEA /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65623A46827001F3AEA /* Screen Shot 2019-11-24 at 5.19.20 PM.png */,
+				2627E65723A46827001F3AEA /* Utils.swift */,
+				2627E65823A46827001F3AEA /* PredictionBuilder.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		2627E65923A46827001F3AEA /* master */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65A23A46827001F3AEA /* AequumMaster.swift */,
+				2627E65B23A46827001F3AEA /* AequumDelegate.swift */,
+			);
+			path = master;
+			sourceTree = "<group>";
+		};
+		2627E65C23A46827001F3AEA /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65D23A46827001F3AEA /* view_controllers */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		2627E65D23A46827001F3AEA /* view_controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65E23A46827001F3AEA /* AequumQuickStatusViewController.xib */,
+				2627E65F23A46827001F3AEA /* slides */,
+				2627E67523A46827001F3AEA /* AequumQuickStatusViewController.swift */,
+			);
+			path = view_controllers;
+			sourceTree = "<group>";
+		};
+		2627E65F23A46827001F3AEA /* slides */ = {
+			isa = PBXGroup;
+			children = (
+				2627E66023A46827001F3AEA /* Slide6ViewController.swift */,
+				2627E66123A46827001F3AEA /* Slide5ViewController.swift */,
+				2627E66223A46827001F3AEA /* cells */,
+				2627E66923A46827001F3AEA /* Slide4ViewController.swift */,
+				2627E66A23A46827001F3AEA /* Slide2ViewController.swift */,
+				2627E66B23A46827001F3AEA /* Slide3ViewController.swift */,
+				2627E66C23A46827001F3AEA /* Slide0ViewController.swift */,
+				2627E66D23A46827001F3AEA /* Slide1ViewController.swift */,
+				2627E66E23A46827001F3AEA /* Slide3ViewController.xib */,
+				2627E66F23A46827001F3AEA /* Slide6ViewController.xib */,
+				2627E67023A46827001F3AEA /* Slide2ViewController.xib */,
+				2627E67123A46827001F3AEA /* Slide1ViewController.xib */,
+				2627E67223A46827001F3AEA /* Slide4ViewController.xib */,
+				2627E67323A46827001F3AEA /* Slide0ViewController.xib */,
+				2627E67423A46827001F3AEA /* Slide5ViewController.xib */,
+			);
+			path = slides;
+			sourceTree = "<group>";
+		};
+		2627E66223A46827001F3AEA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				2627E66323A46827001F3AEA /* aequum_monitor */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		2627E66323A46827001F3AEA /* aequum_monitor */ = {
+			isa = PBXGroup;
+			children = (
+				2627E66423A46827001F3AEA /* LocationServiceTableViewCell.xib */,
+				2627E66523A46827001F3AEA /* LocationServiceTableViewCell.swift */,
+				2627E66623A46827001F3AEA /* AccelerationTableViewCell.swift */,
+				2627E66723A46827001F3AEA /* AccelerationTableViewCell.xib */,
+				2627E66823A46827001F3AEA /* Slide0Protocol.swift */,
+			);
+			path = aequum_monitor;
+			sourceTree = "<group>";
+		};
+		2627E67723A46827001F3AEA /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				2627E67823A46827001F3AEA /* AEPopupNotif.swift */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		2627E67A23A46827001F3AEA /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				2627E67B23A46827001F3AEA /* AEMotionEntity.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		2627FE8823A812B100160172 /* Vehicle Selection */ = {
+			isa = PBXGroup;
+			children = (
+				2627FE8923A812F400160172 /* VehicleSelection_VC.swift */,
+				2627FE8A23A812F400160172 /* VehicleSelection_VC.xib */,
+				262F4E2223A8279200057671 /* TableCell.swift */,
+				262F4E2323A8279200057671 /* TableCell.xib */,
+				2628959223AAB43D00038EAE /* VehicleTableCell.swift */,
+				2628959323AAB43D00038EAE /* VehicleTableCell.xib */,
+			);
+			path = "Vehicle Selection";
+			sourceTree = "<group>";
+		};
+		262AB18323AC4ACE004359AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26247F6D23B155BD00E8B0F6 /* TelematicsScroll */,
+				262AB18423AC4AEE004359AB /* Telematics */,
+				2627E64D23A46811001F3AEA /* Location */,
+				264CB10A23A3E6090032F7A2 /* Bluetooth */,
+				2627FE8823A812B100160172 /* Vehicle Selection */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		262AB18423AC4AEE004359AB /* Telematics */ = {
+			isa = PBXGroup;
+			children = (
+				262AB18523AC4B2D004359AB /* Telematics_VC.swift */,
+				262AB18623AC4B2D004359AB /* Telematics_VC.xib */,
+			);
+			path = Telematics;
+			sourceTree = "<group>";
+		};
+		262ACCEC23A1AE0700E370EF = {
+			isa = PBXGroup;
+			children = (
+				262ACCF823A1AE0700E370EF /* Sdk_Ios */,
+				262ACCF723A1AE0700E370EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		262ACCF723A1AE0700E370EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				262ACCF623A1AE0700E370EF /* Sdk_Ios.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		262ACCF823A1AE0700E370EF /* Sdk_Ios */ = {
+			isa = PBXGroup;
+			children = (
+				26247F7623B1614C00E8B0F6 /* Telematics */,
+				262AB18323AC4ACE004359AB /* Controllers */,
+				26F2896E23A9A52A0028B6B3 /* Framework */,
+				264451C223A98A8E001E81CF /* Asset */,
+				265AF4FF23A973C20066EE1D /* ViewModel */,
+				2643FA4823A933F6007D2CAE /* WebService */,
+				262F087423A84FE9009630DB /* Helper */,
+				262F086D23A84EAD009630DB /* DataModels */,
+				262ACCF923A1AE0700E370EF /* Sdk_Ios.h */,
+				262ACCFA23A1AE0700E370EF /* Info.plist */,
+			);
+			path = Sdk_Ios;
+			sourceTree = "<group>";
+		};
+		262F086D23A84EAD009630DB /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				262F086B23A84E70009630DB /* UserInfo.swift */,
+				262F086E23A84ED8009630DB /* PolicyModel.swift */,
+				262F087023A84F05009630DB /* VehicleModel.swift */,
+				26F2E98E23B186350069A39B /* TransactionModel.swift */,
+				26D7983223B187C100293762 /* TransactionModelArr.swift */,
+				26B4323723BBBD9600FAE2E0 /* Telematics_DashbordModel.swift */,
+				269DAE6023D27889005D9EAD /* Telematics_CurrentRateModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		262F087423A84FE9009630DB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2627E65523A46827001F3AEA /* Constants.swift */,
+				262F087223A84FE0009630DB /* Helper.swift */,
+				264CB15E23A3F5DD0032F7A2 /* Service.swift */,
+				26994D5923A97DDE00A1157F /* ConstantValues.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2643FA4823A933F6007D2CAE /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				2643FA4923A936D3007D2CAE /* WebServices.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		264451C223A98A8E001E81CF /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				264451C323A98AE0001E81CF /* Media.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		264CB10A23A3E6090032F7A2 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				264CB11423A3F0CA0032F7A2 /* ScanTableCell.swift */,
+				264CB11523A3F0CA0032F7A2 /* ScanTableCell.xib */,
+				2627E64023A45B4B001F3AEA /* Bluetooth_mainVC.swift */,
+				2627E64123A45B4B001F3AEA /* Bluetooth_mainVC.xib */,
+				2627E64823A45EC4001F3AEA /* Bluetooth_devicesVC.swift */,
+				2627E64923A45EC4001F3AEA /* Bluetooth_devicesVC.xib */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		265AF4FF23A973C20066EE1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				265AF50023A973E10066EE1D /* PolicyVModel.swift */,
+				265AF50223A9773D0066EE1D /* BaseVModel.swift */,
+				262489D023ABD6510010804A /* TelematicVModel.swift */,
+				2622F63923B16E8500736A1B /* RateHistory_VM.swift */,
+				26F2E98C23B184E70069A39B /* TransactionsVM.swift */,
+				2624F2E123BAB01E00577AAD /* Telematics_dashboardVM.swift */,
+				269DAE5E23D27704005D9EAD /* Telematics_CurrentRateVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		26F2896E23A9A52A0028B6B3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2622F63323B16D5600736A1B /* Charts.framework */,
+				26245AF323AA7FAE00471054 /* ObjectMapper.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		262ACCF123A1AE0700E370EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2627E69A23A46827001F3AEA /* AequumTech.h in Headers */,
+				262ACCFB23A1AE0700E370EF /* Sdk_Ios.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		262ACCF523A1AE0700E370EF /* Sdk_Ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 262ACCFE23A1AE0700E370EF /* Build configuration list for PBXNativeTarget "Sdk_Ios" */;
+			buildPhases = (
+				262ACCF123A1AE0700E370EF /* Headers */,
+				262ACCF223A1AE0700E370EF /* Sources */,
+				262ACCF323A1AE0700E370EF /* Frameworks */,
+				262ACCF423A1AE0700E370EF /* Resources */,
+				261C31BA23BBD4E400DF07EC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sdk_Ios;
+			productName = Sdk_Ios;
+			productReference = 262ACCF623A1AE0700E370EF /* Sdk_Ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		262ACCED23A1AE0700E370EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Rupinder Kaur";
+				TargetAttributes = {
+					262ACCF523A1AE0700E370EF = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 262ACCF023A1AE0700E370EF /* Build configuration list for PBXProject "Sdk_Ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 262ACCEC23A1AE0700E370EF;
+			productRefGroup = 262ACCF723A1AE0700E370EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				262ACCF523A1AE0700E370EF /* Sdk_Ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		262ACCF423A1AE0700E370EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2627E69523A46827001F3AEA /* Slide1ViewController.xib in Resources */,
+				2627E68823A46827001F3AEA /* LocationServiceTableViewCell.xib in Resources */,
+				2627E68B23A46827001F3AEA /* AccelerationTableViewCell.xib in Resources */,
+				264451C423A98AE0001E81CF /* Media.xcassets in Resources */,
+				2627E69323A46827001F3AEA /* Slide6ViewController.xib in Resources */,
+				2627E69823A46827001F3AEA /* Slide5ViewController.xib in Resources */,
+				264CB11723A3F0CA0032F7A2 /* ScanTableCell.xib in Resources */,
+				262F4E2523A8279300057671 /* TableCell.xib in Resources */,
+				2627E69723A46827001F3AEA /* Slide0ViewController.xib in Resources */,
+				2628959523AAB43D00038EAE /* VehicleTableCell.xib in Resources */,
+				2627E69623A46827001F3AEA /* Slide4ViewController.xib in Resources */,
+				2627E64B23A45EC4001F3AEA /* Bluetooth_devicesVC.xib in Resources */,
+				2627FE8C23A812F400160172 /* VehicleSelection_VC.xib in Resources */,
+				2627E69223A46827001F3AEA /* Slide3ViewController.xib in Resources */,
+				2627E68023A46827001F3AEA /* Screen Shot 2019-11-24 at 5.19.20 PM.png in Resources */,
+				26247F7823B1615F00E8B0F6 /* Telematics.storyboard in Resources */,
+				2627E68523A46827001F3AEA /* AequumQuickStatusViewController.xib in Resources */,
+				2627E64323A45B4B001F3AEA /* Bluetooth_mainVC.xib in Resources */,
+				2627E69423A46827001F3AEA /* Slide2ViewController.xib in Resources */,
+				262AB18823AC4B2D004359AB /* Telematics_VC.xib in Resources */,
+				26D7983723B189AB00293762 /* TransactionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		262ACCF223A1AE0700E370EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F2E98F23B186350069A39B /* TransactionModel.swift in Sources */,
+				2624F2E223BAB01E00577AAD /* Telematics_dashboardVM.swift in Sources */,
+				2627E68223A46827001F3AEA /* PredictionBuilder.swift in Sources */,
+				2627FE8B23A812F400160172 /* VehicleSelection_VC.swift in Sources */,
+				2627E64223A45B4B001F3AEA /* Bluetooth_mainVC.swift in Sources */,
+				26F2E98D23B184E70069A39B /* TransactionsVM.swift in Sources */,
+				262F086F23A84ED8009630DB /* PolicyModel.swift in Sources */,
+				2643FA4A23A936D3007D2CAE /* WebServices.swift in Sources */,
+				2627E68723A46827001F3AEA /* Slide5ViewController.swift in Sources */,
+				2627E68D23A46827001F3AEA /* Slide4ViewController.swift in Sources */,
+				2627E68F23A46827001F3AEA /* Slide3ViewController.swift in Sources */,
+				262F087323A84FE0009630DB /* Helper.swift in Sources */,
+				262F087123A84F05009630DB /* VehicleModel.swift in Sources */,
+				2627E67E23A46827001F3AEA /* AequumCommOperation.swift in Sources */,
+				2627E68923A46827001F3AEA /* LocationServiceTableViewCell.swift in Sources */,
+				262F086C23A84E70009630DB /* UserInfo.swift in Sources */,
+				269DAE6123D27889005D9EAD /* Telematics_CurrentRateModel.swift in Sources */,
+				269DAE5F23D27704005D9EAD /* Telematics_CurrentRateVM.swift in Sources */,
+				265AF50123A973E10066EE1D /* PolicyVModel.swift in Sources */,
+				26247F7023B155FB00E8B0F6 /* Telematics_ScrollVC.swift in Sources */,
+				2627E68123A46827001F3AEA /* Utils.swift in Sources */,
+				26111DC723B56A210001C8C0 /* Telematics_dashboardVC.swift in Sources */,
+				2627E69123A46827001F3AEA /* Slide1ViewController.swift in Sources */,
+				262F4E2423A8279200057671 /* TableCell.swift in Sources */,
+				26994D5A23A97DDE00A1157F /* ConstantValues.swift in Sources */,
+				2627E64A23A45EC4001F3AEA /* Bluetooth_devicesVC.swift in Sources */,
+				265AF50323A9773D0066EE1D /* BaseVModel.swift in Sources */,
+				2627E68E23A46827001F3AEA /* Slide2ViewController.swift in Sources */,
+				261CC9D323CD299F0066A9E5 /* TelematicsDashboardVC.swift in Sources */,
+				2627E68A23A46827001F3AEA /* AccelerationTableViewCell.swift in Sources */,
+				264CB15F23A3F5DD0032F7A2 /* Service.swift in Sources */,
+				2627E69D23A46827001F3AEA /* AEMotionEntity.swift in Sources */,
+				2627E69023A46827001F3AEA /* Slide0ViewController.swift in Sources */,
+				26F2E98B23B183CF0069A39B /* Telematics_TransactionsVC.swift in Sources */,
+				2627E68623A46827001F3AEA /* Slide6ViewController.swift in Sources */,
+				26D7983323B187C100293762 /* TransactionModelArr.swift in Sources */,
+				2627E69B23A46827001F3AEA /* AEPopupNotif.swift in Sources */,
+				2627E69923A46827001F3AEA /* AequumQuickStatusViewController.swift in Sources */,
+				2627E67D23A46827001F3AEA /* GPSLocationServiceOperation.swift in Sources */,
+				2627E68323A46827001F3AEA /* AequumMaster.swift in Sources */,
+				26B4323823BBBD9600FAE2E0 /* Telematics_DashbordModel.swift in Sources */,
+				2622F63A23B16E8500736A1B /* RateHistory_VM.swift in Sources */,
+				262AB18723AC4B2D004359AB /* Telematics_VC.swift in Sources */,
+				2633D23A23C68F8500A00B9B /* Telematics_driverVC.swift in Sources */,
+				2627E68423A46827001F3AEA /* AequumDelegate.swift in Sources */,
+				2627E67C23A46827001F3AEA /* GPSAccelerationCalculationOperation.swift in Sources */,
+				264CB11623A3F0CA0032F7A2 /* ScanTableCell.swift in Sources */,
+				2627E68C23A46827001F3AEA /* Slide0Protocol.swift in Sources */,
+				2622F62F23B1698700736A1B /* Telematics_rateHistoryVC.swift in Sources */,
+				2627E69F23A4685E001F3AEA /* GPSLocationServiceProvider.swift in Sources */,
+				26D7983623B189AB00293762 /* TransactionCell.swift in Sources */,
+				2627E67F23A46827001F3AEA /* Constants.swift in Sources */,
+				2628959423AAB43D00038EAE /* VehicleTableCell.swift in Sources */,
+				262489D123ABD6510010804A /* TelematicVModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		262ACCFC23A1AE0700E370EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		262ACCFD23A1AE0700E370EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		262ACCFF23A1AE0700E370EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6VM924W4SP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sdk_Ios/Framework",
+				);
+				INFOPLIST_FILE = Sdk_Ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aequumtech.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		262ACD0023A1AE0700E370EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6VM924W4SP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sdk_Ios/Framework",
+				);
+				INFOPLIST_FILE = Sdk_Ios/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aequumtech.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		262ACCF023A1AE0700E370EF /* Build configuration list for PBXProject "Sdk_Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262ACCFC23A1AE0700E370EF /* Debug */,
+				262ACCFD23A1AE0700E370EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		262ACCFE23A1AE0700E370EF /* Build configuration list for PBXNativeTarget "Sdk_Ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262ACCFF23A1AE0700E370EF /* Debug */,
+				262ACD0023A1AE0700E370EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 262ACCED23A1AE0700E370EF /* Project object */;
+}

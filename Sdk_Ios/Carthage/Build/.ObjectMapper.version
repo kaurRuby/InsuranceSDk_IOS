@@ -1,0 +1,31 @@
+{
+  "Mac" : [
+    {
+      "name" : "ObjectMapper",
+      "hash" : "71fec66858a0c075409a31c24a74f09ed6a16d29f3c58f02de605e6a7099f7f9",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "ObjectMapper",
+      "hash" : "f4d586df8da1d3adaa1f708fe7277c49c42a91b0e4bdb263b964c88d36a246a0",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "ObjectMapper",
+      "hash" : "38068f07d4f0c5f84efcaac84dbf026f59668ca5a93014e6d58a5068b8737b46",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ],
+  "commitish" : "3.5.1",
+  "iOS" : [
+    {
+      "name" : "ObjectMapper",
+      "hash" : "517b776edf293ceb5fd481933942fa05105752882f9ed61f0ef6c55328287de7",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

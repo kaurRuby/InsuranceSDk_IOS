@@ -1,0 +1,2 @@
+github "tristanhimmelman/ObjectMapper" ~> 3.4
+github "danielgindi/Charts" ~> 3.4.0
